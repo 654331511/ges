@@ -403,7 +403,7 @@ header {
 
 @media screen and (min-width: 1300px) {
     header {
-        height: .93867rem
+        height: 1.53867rem
     }
 }
 
@@ -417,7 +417,7 @@ header .content {
         padding-top: .128rem
     }
 }
-header .logo{
+/*header .logo{
     float: left;
     width:1.024rem;
     height:1.024rem;
@@ -436,10 +436,25 @@ header .logo img {
         height:.64rem;
         margin:0 .384rem;
     }
+}*/
+header .content .s-left {
+  width: 20%;
+  height: 1.23733rem;
+  line-height: 1.23733rem;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.54rem;
+  text-align: right;
+  color: white;
+  padding-right: 0.2rem;
+  background-image: url("../images/pos.png");
+  background-repeat: no-repeat;
+  background-size: 0.4rem 0.5rem;
+  background-position: 0.6rem 0.35rem;
 }
 
 header .sea-box {
-    width:12.8rem;
+    width:8.8rem;
     height: 1.23733rem;
     background: #fff;
     position: relative;
@@ -451,7 +466,7 @@ header .sea-box {
 @media screen and (min-width: 1300px) {
     header .sea-box {
         height: .64rem;
-        width:12.8rem;
+        width:8.8rem;
     }
 }
 
@@ -463,6 +478,7 @@ header .sea-box span {
     width: .64rem;
     float: left;
     margin:.298667rem 0;
+    margin-left: 0.5rem;
 }
 
 @media screen and (min-width: 1300px) {
@@ -470,17 +486,18 @@ header .sea-box span {
         width:.384rem;
         height:.384rem;
         margin:.128rem 0;
+        margin-left: 0.5rem;
     }
 }
 
 header .sea-box .sear-input {
-    width:10.112rem;
+    width:7.112rem;
     margin-left:.256rem;
 }
 
 @media screen and (min-width: 1300px) {
     header .sea-box .sear-input {
-        width: 10.496rem;
+        width: 7.496rem;
     }
 }
 header .sea-box form{
@@ -515,9 +532,13 @@ header .login {
 }
 
 header .login a {
-    color: #fff
+    color: #fff;
+    margin: -0.1rem 0 0 0.5rem;
 }
-
+header .login img{
+    width: 0.6rem;
+    height: auto;
+}
 .headerbg {
     background: -webkit-linear-gradient(rgba(242,48,48,0.8), rgba(242,48,48,0.8));
     background: -o-linear-gradient(rgba(242,48,48,0.8), rgba(242,48,48,0.8));
@@ -525,7 +546,6 @@ header .login a {
     background: linear-gradient(rgba(242,48,48,0.8),rgba(242,48,48,0.8));
     opacity: 1
 }
-
 .foohi {
     height: 2.34667rem
 }

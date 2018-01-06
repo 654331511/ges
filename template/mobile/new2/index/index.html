@@ -15,12 +15,13 @@
     <!--顶部搜索栏-s-->
     <header>
         <div class="content">
+        	<div class='s-left'>西安市</div>
             <div class="ds-in-bl search">
                 <div class="sea-box">
-                    <div class="logo">
+                    <!--<div class="logo">
                         <a href=""><img src="__STATIC__/images/logo.png" alt="LOGO"></a>
-                    </div>
-                    <span ></span>
+                    </div>-->
+                    <span></span>
                     <form action=""  method="post">
                         <div class="sear-input">
                             <a href="{:U('Goods/ajaxSearch')}">
@@ -35,7 +36,8 @@
                 <if condition="$user_id gt 0">
                     <a href="{:U('Mobile/User/index')}"> <img class="after_login" src="__STATIC__/images/my.png"></a>
                 <else/>
-                    <a href="{:U('Mobile/User/login')}"> 登录</a>
+                    <img src="__STATIC__/images/tel.png"/>
+                    <a href="{:U('Mobile/User/login')}"> <img src="__STATIC__/images/adm.png"/></a>
                 </if>
             </span>
             </div>

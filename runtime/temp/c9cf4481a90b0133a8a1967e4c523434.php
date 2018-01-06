@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:39:"./template/mobile/new2/index\index.html";i:1515228172;s:41:"./template/mobile/new2/public\footer.html";i:1515226940;s:45:"./template/mobile/new2/public\footer_nav.html";i:1515226935;s:43:"./template/mobile/new2/public\wx_share.html";i:1515226934;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:39:"./template/mobile/new2/index\index.html";i:1515229569;s:41:"./template/mobile/new2/public\footer.html";i:1515226940;s:45:"./template/mobile/new2/public\footer_nav.html";i:1515229067;s:43:"./template/mobile/new2/public\wx_share.html";i:1515226934;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +50,7 @@
         <div class="mslide" id="slideTpshop">
             <ul>
                 <!--广告表-->
-                <?php $pid =32;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515225600 and end_time > 1515225600 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("5")->select();
+                <?php $pid =32;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515229200 and end_time > 1515229200 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("5")->select();
 if(is_array($ad_position) && !in_array($pid,array_keys($ad_position)) && $pid)
 {
   M("ad_position")->insert(array(
@@ -102,57 +102,77 @@ foreach($result as $key=>$v):
 
     <!--菜单-start-->
     <div class="floor dh">
-        <nav>
+    	<dl class="nav1">
+			<dt><img src="__STATIC__/images/active.png"/></dt>
+			<dd>
+				<ul>
+					<li class="infor">2017胜多负少发的发的方法</li>
+					<li class="infor">地方的发个梵蒂冈梵蒂冈发的</li>
+					<li class="infor">发个梵蒂冈</li>
+					<li class="infor">尔特让他人与人甜言软语</li>
+				</ul>
+			</dd>
+			<span class="span-only">更多</span>
+			<img class="img-only" src="__STATIC__/images/find.png" />
+		</dl>
+		<ul class="nav2">
+			<li class="active">联盟活动</li>
+			<li>入驻申请</li>
+			<li>装修公司</li>
+			<li>免费领券</li>
+			<li>装修贷款</li>
+		</ul>
+         <nav>
             <a href="<?php echo U('Goods/categoryList'); ?>">
                 <span>
-                    <img src="__STATIC__/images/icon_03.png" alt="全部分类" /><br />
-                    <span>全部分类</span>
+                    <img src="__STATIC__/images/style.png" alt="品牌馆" /><br />
+                    <span>品牌馆</span>
                 </span>
             </a>
             <a href="<?php echo U('Goods/integralMall'); ?>">
                 <span>
-                    <img src="__STATIC__/images/icon_05.png" alt="积分商城" /><br />
-                    <span>积分商城</span>
+                    <img src="__STATIC__/images/money.png" alt="智能报价" /><br />
+                    <span>智能报价</span>
                 </span>
             </a>
             <a href="<?php echo U('Goods/brandstreet'); ?>">
                 <span>
-                    <img src="__STATIC__/images/icon_07.png" alt="品牌街" /><br />
-                    <span>品牌街</span>
+                    <img src="__STATIC__/images/she.png" alt="免费设计" /><br />
+                    <span>免费设计</span>
                 </span>
             </a>
             <a href="<?php echo U('Activity/promote_goods'); ?>">
                 <span>
-                    <img src="__STATIC__/images/icon_09.png" alt="优惠活动" /><br />
-                    <span>优惠活动</span>
+                    <img src="__STATIC__/images/piao.png" alt="投票" /><br />
+                    <span>投票</span>
                 </span>
             </a>
             <a href="<?php echo U('Activity/group_list'); ?>">
                 <span>
-                    <img src="__STATIC__/images/icon_15.png" alt="团购" /><br />
-                    <span>团购</span>
+                    <img src="__STATIC__/images/firend.png" alt="合伙人" /><br />
+                    <span>合伙人</span>
                 </span>
             </a>
-            <a href="<?php echo U('Order/order_list'); ?>">
+            <!--<a href="<?php echo U('Order/order_list'); ?>">
                 <span>
                     <img src="__STATIC__/images/icon_16.png" alt="我的订单" /><br />
                     <span>我的订单</span>
                 </span>
-            </a>
+            </a>-->
             <!--<a href="shopcar.html">-->
-            <a href="<?php echo U('Cart/index'); ?>">
+            <!--<a href="<?php echo U('Cart/index'); ?>">
                 <span>
                     <img src="__STATIC__/images/icon_17.png" alt="购物车" /><br />
                     <span>购物车</span>
                 </span>
-            </a>
+            </a>-->
             <!--<a href="my.html">-->
-            <a href="<?php echo U('Team/index'); ?>">
+            <!--<a href="<?php echo U('Team/index'); ?>">
                 <span>
                     <img src="__STATIC__/images/icon_19.png" alt="个人中心" /><br />
                     <span>我要拼团</span>
                 </span>
-            </a>
+            </a>-->
         </nav>
     </div>
     <!--菜单-end-->
@@ -220,7 +240,7 @@ foreach($result as $key=>$v):
 
     <!--广告位-start-->
     <div class="banner ma-to-20">
-        <?php $pid =400;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515225600 and end_time > 1515225600 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
+        <?php $pid =400;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515229200 and end_time > 1515229200 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
 if(is_array($ad_position) && !in_array($pid,array_keys($ad_position)) && $pid)
 {
   M("ad_position")->insert(array(
@@ -267,7 +287,7 @@ foreach($result as $key=>$v):
     <div class="floor advertisement">
         <div class="content">
             <div class="le lefhe fl">
-                <?php $pid =301;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515225600 and end_time > 1515225600 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
+                <?php $pid =301;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515229200 and end_time > 1515229200 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
 if(is_array($ad_position) && !in_array($pid,array_keys($ad_position)) && $pid)
 {
   M("ad_position")->insert(array(
@@ -311,7 +331,7 @@ foreach($result as $key=>$v):
                             <img src="<?php echo $v[ad_code]; ?>">
                         </div>
                     </a>
-                <?php endforeach; $pid =302;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515225600 and end_time > 1515225600 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
+                <?php endforeach; $pid =302;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515229200 and end_time > 1515229200 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
 if(is_array($ad_position) && !in_array($pid,array_keys($ad_position)) && $pid)
 {
   M("ad_position")->insert(array(
@@ -358,7 +378,7 @@ foreach($result as $key=>$v):
                 <?php endforeach; ?>
             </div>
             <div class="le re fr">
-                <?php $pid =300;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515225600 and end_time > 1515225600 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
+                <?php $pid =300;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515229200 and end_time > 1515229200 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
 if(is_array($ad_position) && !in_array($pid,array_keys($ad_position)) && $pid)
 {
   M("ad_position")->insert(array(
@@ -417,7 +437,7 @@ foreach($result as $key=>$v):
         <div class="advertisement">
             <div class="content">
                 <div class="le re fl">
-                    <?php $pid =303;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515225600 and end_time > 1515225600 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
+                    <?php $pid =303;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515229200 and end_time > 1515229200 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("1")->select();
 if(is_array($ad_position) && !in_array($pid,array_keys($ad_position)) && $pid)
 {
   M("ad_position")->insert(array(
@@ -464,7 +484,7 @@ foreach($result as $key=>$v):
                     <?php endforeach; ?>
                 </div>
                 <div class="le lefhe fr">
-                    <?php $pid =304;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515225600 and end_time > 1515225600 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("2")->select();
+                    <?php $pid =304;$ad_position = M("ad_position")->cache(true,TPSHOP_CACHE_TIME)->column("position_id,position_name,ad_width,ad_height","position_id");$result = M("ad")->where("pid=$pid  and enabled = 1 and start_time < 1515229200 and end_time > 1515229200 ")->order("orderby desc")->cache(true,TPSHOP_CACHE_TIME)->limit("2")->select();
 if(is_array($ad_position) && !in_array($pid,array_keys($ad_position)) && $pid)
 {
   M("ad_position")->insert(array(
@@ -611,6 +631,14 @@ foreach($result as $key=>$v):
                     <div class="icon">
                         <i class="icon-fenlei iconfont"></i>
                         <p>分类</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="icon-zhuangxiu iconfont"></i>
+                        <p>装修</p>
                     </div>
                 </a>
             </li>
@@ -796,6 +824,16 @@ $(function(){
 <script src="__STATIC__/js/style.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="__STATIC__/js/sourch_submit.js"></script>
 <script type="text/javascript">
+	
+	//活动信息
+	var timer = " ";
+	var $myUl = $('.nav1 dd ul');
+	
+	function move() {
+		$('.nav1 dd ul li:first').appendTo($myUl).html();
+	}
+	timer = setInterval(move, 1000);
+	
     /**
      * 秒杀模块倒计时
      * */

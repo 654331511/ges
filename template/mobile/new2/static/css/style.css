@@ -217,7 +217,61 @@ span,img {
 .floor {
     overflow: hidden
 }
-
+.floor .nav1 {
+  height: 2.8rem;
+  position: relative;
+  display: -webkit-box;
+  padding: 0.38rem 0.52rem;
+  margin-top: 0.38rem;
+  font-size: 0.48rem;
+}
+.floor .nav1 .span-only {
+  position: absolute;
+  right: 2.4rem;
+  bottom: 0.7rem;
+}
+.floor .nav1 .img-only {
+  width: 1.6rem;
+  height: auto;
+  background: none;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.6rem;
+}
+.floor .nav1 dt img {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+.floor .nav1 dd {
+  margin-left: 0.42rem;
+  line-height: 1rem;
+  overflow: hidden;
+}
+.floor .nav1 dd ul .infor {
+  background-image: url(../images/infor.png);
+  background-repeat: no-repeat;
+  background-size: 0.8rem 0.6rem;
+  background-position: 0 0.24rem;
+  padding-left: 1rem;
+}
+.floor .nav2 {
+  display: -webkit-box;
+  text-align: center;
+  margin-top: 0.38rem;
+  font-size: 0.4rem;
+}
+.floor .nav2 .active {
+  color: #e60000;
+  border: 1px solid #E60000;
+}
+.floor .nav2 li {
+  -webkit-box-flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.1rem;
+  margin: 0 0.2rem;
+}
 .p:before,.p:after {
     content: "";
     clear: both;
@@ -584,7 +638,7 @@ header .login img{
 .footer ul li {
     float: left;
     text-align: center;
-    width: 25%
+    width: 20%
 }
 
 .footer ul li .yello {
@@ -641,7 +695,7 @@ header .login img{
 .dh nav a {
     display: block;
     float: left;
-    width: 25%;
+    width: 20%;
     text-align: center;
     margin: .42667rem 0
 }

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:44:"./template/mobile/new2/goods\ajaxSearch.html";i:1515226940;s:41:"./template/mobile/new2/public\header.html";i:1515226946;s:45:"./template/mobile/new2/public\header_nav.html";i:1515226944;s:45:"./template/mobile/new2/public\footer_nav.html";i:1515226935;s:43:"./template/mobile/new2/public\wx_share.html";i:1515226934;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:44:"./template/mobile/new2/goods\ajaxSearch.html";i:1515226940;s:41:"./template/mobile/new2/public\header.html";i:1515226946;s:45:"./template/mobile/new2/public\header_nav.html";i:1515226944;s:45:"./template/mobile/new2/public\footer_nav.html";i:1515229067;s:43:"./template/mobile/new2/public\wx_share.html";i:1515226934;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -128,6 +128,14 @@
                     <div class="icon">
                         <i class="icon-fenlei iconfont"></i>
                         <p>分类</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="icon-zhuangxiu iconfont"></i>
+                        <p>装修</p>
                     </div>
                 </a>
             </li>

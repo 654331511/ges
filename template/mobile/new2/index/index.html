@@ -63,57 +63,77 @@
 
     <!--菜单-start-->
     <div class="floor dh">
-        <nav>
+    	<dl class="nav1">
+			<dt><img src="__STATIC__/images/active.png"/></dt>
+			<dd>
+				<ul>
+					<li class="infor">2017胜多负少发的发的方法</li>
+					<li class="infor">地方的发个梵蒂冈梵蒂冈发的</li>
+					<li class="infor">发个梵蒂冈</li>
+					<li class="infor">尔特让他人与人甜言软语</li>
+				</ul>
+			</dd>
+			<span class="span-only">更多</span>
+			<img class="img-only" src="__STATIC__/images/find.png" />
+		</dl>
+		<ul class="nav2">
+			<li class="active">联盟活动</li>
+			<li>入驻申请</li>
+			<li>装修公司</li>
+			<li>免费领券</li>
+			<li>装修贷款</li>
+		</ul>
+         <nav>
             <a href="{:U('Goods/categoryList')}">
                 <span>
-                    <img src="__STATIC__/images/icon_03.png" alt="全部分类" /><br />
-                    <span>全部分类</span>
+                    <img src="__STATIC__/images/style.png" alt="品牌馆" /><br />
+                    <span>品牌馆</span>
                 </span>
             </a>
             <a href="{:U('Goods/integralMall')}">
                 <span>
-                    <img src="__STATIC__/images/icon_05.png" alt="积分商城" /><br />
-                    <span>积分商城</span>
+                    <img src="__STATIC__/images/money.png" alt="智能报价" /><br />
+                    <span>智能报价</span>
                 </span>
             </a>
             <a href="{:U('Goods/brandstreet')}">
                 <span>
-                    <img src="__STATIC__/images/icon_07.png" alt="品牌街" /><br />
-                    <span>品牌街</span>
+                    <img src="__STATIC__/images/she.png" alt="免费设计" /><br />
+                    <span>免费设计</span>
                 </span>
             </a>
             <a href="{:U('Activity/promote_goods')}">
                 <span>
-                    <img src="__STATIC__/images/icon_09.png" alt="优惠活动" /><br />
-                    <span>优惠活动</span>
+                    <img src="__STATIC__/images/piao.png" alt="投票" /><br />
+                    <span>投票</span>
                 </span>
             </a>
             <a href="{:U('Activity/group_list')}">
                 <span>
-                    <img src="__STATIC__/images/icon_15.png" alt="团购" /><br />
-                    <span>团购</span>
+                    <img src="__STATIC__/images/firend.png" alt="合伙人" /><br />
+                    <span>合伙人</span>
                 </span>
             </a>
-            <a href="{:U('Order/order_list')}">
+            <!--<a href="{:U('Order/order_list')}">
                 <span>
                     <img src="__STATIC__/images/icon_16.png" alt="我的订单" /><br />
                     <span>我的订单</span>
                 </span>
-            </a>
+            </a>-->
             <!--<a href="shopcar.html">-->
-            <a href="{:U('Cart/index')}">
+            <!--<a href="{:U('Cart/index')}">
                 <span>
                     <img src="__STATIC__/images/icon_17.png" alt="购物车" /><br />
                     <span>购物车</span>
                 </span>
-            </a>
+            </a>-->
             <!--<a href="my.html">-->
-            <a href="{:U('Team/index')}">
+            <!--<a href="{:U('Team/index')}">
                 <span>
                     <img src="__STATIC__/images/icon_19.png" alt="个人中心" /><br />
                     <span>我要拼团</span>
                 </span>
-            </a>
+            </a>-->
         </nav>
     </div>
     <!--菜单-end-->
@@ -291,6 +311,16 @@
 <script src="__STATIC__/js/style.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="__STATIC__/js/sourch_submit.js"></script>
 <script type="text/javascript">
+	
+	//活动信息
+	var timer = " ";
+	var $myUl = $('.nav1 dd ul');
+	
+	function move() {
+		$('.nav1 dd ul li:first').appendTo($myUl).html();
+	}
+	timer = setInterval(move, 1000);
+	
     /**
      * 秒杀模块倒计时
      * */

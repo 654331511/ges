@@ -463,7 +463,7 @@ header {
 
 header .content {
     padding-top: .29867rem;
-    margin:0; 
+    margin:0;
 }
 
 @media screen and (min-width: 1300px) {
@@ -1449,7 +1449,7 @@ footer .flool3 p {
 }
 .logo-wrap-bg{
     height: 7.893333rem;
-    padding-top:2.56rem;
+    padding-top:1.2rem;
     background: url(../images/pic-logo-bg.png) no-repeat 0 0;
     background-size:cover;
 }
@@ -1458,9 +1458,9 @@ footer .flool3 p {
 }
 .login-logo-wrap{
     display: block;
-    width:5.802666rem;
-    height:2.346666rem;
-    margin:auto; 
+    width:4.302666rem;
+    /* height:2.346666rem; */
+    margin:auto;
     overflow: hidden;
 }
 .loginsingup-input{
@@ -1473,7 +1473,7 @@ footer .flool3 p {
 .loginsingup-input .lsu {
     border-bottom: 1px solid #dbdbdb;
     height: 2.133333rem;
-    padding:.853333rem .64rem .426667rem; 
+    padding:.853333rem .64rem .426667rem;
 }
 .loginsingup-input input{
     border: 0;
@@ -1505,19 +1505,19 @@ footer .flool3 p {
 }
 .loginsingup-input .ico-v-code{
     background-position: 0 -1.706667rem;
-}  
+}
 .loginsingup-input .ico-telephone{
     background-position: 0 -2.56rem;
 }
 .loginsingup-input .ico-referee{
     background-position: 0 -3.413333rem;
-} 
+}
 .loginsingup-input .ico-old-password{
     background-position: 0 -4.266666rem;
-}    
+}
 .loginsingup-input .ico-email{
     background-position: 0 -5.11999rem;
-}         
+}
 .loginsingup-input .lsu .v-code-input{
     width: 5.12rem;
 }
@@ -1554,10 +1554,10 @@ footer .flool3 p {
     padding: 0 .213333rem;
     color:#e02015;
     border: 1px solid #e02015;
-    border-radius:.426667rem;    
+    border-radius:.426667rem;
 }
 .loginsingup-input .lsu-submit{
-    padding:.853333rem 0; 
+    padding:.853333rem 0;
 }
 .loginsingup-input .lsu-submit input,.btn-goto-login{
     width: 100%;
@@ -1650,7 +1650,7 @@ footer .flool3 p {
 }
 .show-center-box>a{
     display: block;
-    margin-top:2.133333rem; 
+    margin-top:2.133333rem;
 }
 .show-center-box .sucess-pic-wrap{
     margin-bottom:.853333rem;
@@ -1734,10 +1734,10 @@ footer .flool3 p {
     background-position: 0 0;
 }
 .ico-qq-login{
-    background-position:-1.834666rem 0; 
+    background-position:-1.834666rem 0;
 }
 .ico-alipay-login{
-    background-position:-3.669332rem 0; 
+    background-position:-3.669332rem 0;
 }
 
 .singupphone .content30 .bk span {
@@ -5431,7 +5431,7 @@ float: left
 .payit .fr a.disable {
     background-color: #e5e8eb;
 }
- 
+
 .closeorder .con-lo {
     line-height: 2.8
 }
@@ -11650,7 +11650,7 @@ div.layui-m-layerbtn span{
 }
 .ac-d-state>span{
     display: inline-block;
-    padding:0 .426667rem; 
+    padding:0 .426667rem;
     font-size:.512rem;
     line-height:.896rem;
     color: #999;
@@ -11941,58 +11941,3 @@ div.layui-m-layerbtn span{
 .share-bottom-wrap .bdsharebuttonbox>.ico-share-weibo{
     background-image:url("../images/ico-share-weibo.png");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
